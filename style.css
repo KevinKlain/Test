@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+}
+
+.main {
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+    "info picture"
+    "age-checkbox picture"
+    "about picture"
+    "footer picture"
+    ;
+    column-gap: 60px;
+}
+
+.picture {
+    grid-area: picture;
+    width: 100%;
+}
+
+.info {
+    grid-area: info;
+    width: 100%;
+    margin: 100px;
+}
+
+/*basic-info*/
+
+.basic-info {
+    display: grid;
+    grid-gap: 24px;
+    grid-template-areas: 
+      "name name"
+      "email password";
+  }
+
+  .basis-info-name {
+    grid-area: name;
+  }
+  
+  .basis-info-email {
+    grid-area: email;
+  }
+  
+  .basis-info-password{
+    grid-area: password;
+  }
+
+  #name {
+    width: 100%;
+    background: #E2E5ED;
+    margin: 6px 0 16px;
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+  }
+  
+  #email {
+    background: #E2E5ED;
+    margin: 6px 0 24px;
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    width: 100%;
+  }
+  
+  #password {
+    background: #E2E5ED;
+    margin: 6px 0 24px;
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    width: 100%;
+  }
+
+  /*Age*/
+
+  .age-checkbox {
+    margin-top: 24px;
+    grid-area: age-checkbox;
+    
+  }
+
+  .age-label {
+    display: block;
+}
+  
+  .age-checkbox-text {
+    display: inline-block;
+  }
+
+  /*about*/
+
+  .about {
+    grid-area: about;
+    display: grid;
+    grid-template-columns:  column;
+    align-content: space-between;
+    height: 30%;
+    margin: 48px 0 0 0 ;
+    row-gap: 40px;
+  }
+
+  .about-label {
+    display: block;
+    margin: 8px 0 16px 0;
+  }
+
+  .about-title {
+    font-size: 30px;
+    font-weight: 100;
+  }
+  
+  #about-text {
+    background-color: #E2E5ED;
+    border: none;
+    border-radius: 10px;
+    height: 150px;
+    width: 100%;
+  }
+  
+#select-location {
+    background-color: #E2E5ED;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+}
+
+.footer {
+    grid-area: footer;
+    margin-top: 100px;
+}
+  
+  .equipment-checkbox-text {
+    display: inline-block;
+    padding-left: 8px;
+  }
+  
+  .button {
+   display: grid;
+   grid-template-areas: "reset submit";
+     width: 100%;
+    margin: 64px 0 64px 0;
+  }
+  
+  .reset {
+    grid-area: reset;
+     width: 100%;
+      background: #fff;
+      height: 50px;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 10px;
+  }
+  
+  .submit {
+    grid-area: submit;
+     width: 100%;
+      background: #149770;
+      height: 50px;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 10px;
+      border: none;
+      color: #fff;
+      margin-left: 16px;
+  }
+  
+  .reset:hover {
+    background: #E2E5ED;
+  }
+  
+  .submit:hover {
+    background: green;
+  }
+  
